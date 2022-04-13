@@ -1,30 +1,20 @@
 
 function position (primeiroLugar, segundoLugar, terceiroLugar) {
 
+    const devs = [primeiroLugar, segundoLugar, terceiroLugar];
+    
+    if (segundoLugar === "Daniel"){
 
-    if (primeiroLugar === devs [0]){
+        console.log (`1º colocado ${devs[1]}, 2º colocado ${devs[0]} e 3º colocado ${devs[2]}`);
 
-        console.log (`1º colocado ${primeiroLugar}, 2º colocado ${segundoLugar} e 3º colocado ${terceiroLugar}`);
-        
-    } else if (segundoLugar === devs[0]){
+    } else if (terceiroLugar === "Daniel") {
 
-        console.log (`1º colocado ${segundoLugar}, 2º colocado ${primeiroLugar} e 3º colocado ${terceiroLugar}`);
+        console.log (`1º colocado ${devs[0]}, 2º colocado ${devs[2]} e 3º colocado ${devs[1]}`);
 
-    } else if (terceiroLugar === devs[0]) {
+    } else {
 
-        console.log (`1º colocado ${primeiroLugar}, 2º colocado ${terceiroLugar} e 3º colocado ${segundoLugar}`);
-
-    } 
-
+        return console.log (`1º colocado ${devs[0]}, 2º colocado ${devs[1]} e 3º colocado ${devs[2]}`);
+    }
 }
 
-
-let devs = ["Daniel", "Manoel", "Rafael"];
-
-
-// INSIRA NA FUNÇÃO BAIXO O NOME DOS DEVS DE ACORDO COM SUA CLASSIFICAÇÃO PARCIAL
-
-position ("Manoel", "Daniel", "Rafael");
-
-// VEJA NO CONSOLE O RESULTADO FINAL
-
+ position ("Daniel", "Manoel", "Rafael");
